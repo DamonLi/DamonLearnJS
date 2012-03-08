@@ -2,9 +2,21 @@
 <html>
 <head>
     <title>9. Classes and Modules</title>
-    <script src="./js/oo.js"></script>
+    <script type="text/javascript" src="js/set.js"></script>
+    <script type="text/javascript">
+        var set = new Set(1000, 'a', Set);
+        function Range(from, to) {
+            this.from = arguments[0];
+            this.to = arguments[1];
+        }
+        Range.prototype.includes = function (x) {
+            return this.from <= x && x <= this.to;
+        }
+
+        var r = new Range(1, 3, 5);
+
+    </script>
 </head>
 <body>
-
 </body>
 </html>
